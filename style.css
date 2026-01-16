@@ -1,7 +1,7 @@
 :root{
     --dBlue: #05122d;
     --mBlue: #142750;
-    --laranja: #fca311;
+    --laranja: #fdaf30;
     --cinza: #e5e5e5;
     --light: #ffffff;
 }
@@ -23,7 +23,7 @@ nav{
     align-items: center;
     gap: 20px;
     box-shadow: var(--dBlue) 0px 5px 15px;
-    animation: fromTop 200ms ease-in-out;
+    animation: fromTop 1s ease-in-out;
 }
 
 @keyframes fromTop {
@@ -31,7 +31,7 @@ nav{
     transform: translateY(-100px);
    }
    100%{
-
+    transform: translateY(0);
    } 
 }
 
@@ -50,9 +50,40 @@ nav a:hover{
 }
 
 #s1 {
-    min-height: 100vh;
+    height: 80vh;
+    min-height: 80vh;
     padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+
+.imgDiv{
+    background-color: rgb(240, 219, 128);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px var(--dBlue);
+}
+
+.imgStyle{
+    width: auto;
+    height: 300px;
+}
+
+.textDiv{
+    background-color: rgb(166, 244, 89);
+    width: 600px;
+    height: 300px;
+}
+
+
 
 #s2 {
     min-height: 100vh;
