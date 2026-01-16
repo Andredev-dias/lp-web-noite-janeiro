@@ -75,6 +75,13 @@ nav a:hover{
 .imgStyle{
     width: auto;
     height: 300px;
+    filter: grayscale(1);
+    transition: all 200ms ease-in-out;
+}
+
+.imgStyle:hover{
+     filter: grayscale(0);
+     transform: scale(1.1);
 }
 
 .textDiv{
