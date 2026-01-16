@@ -1,6 +1,6 @@
 :root{
-    --dark: #000000;
-    --darkBlue: #14213d;
+    --dBlue: #05122d;
+    --mBlue: #142750;
     --laranja: #fca311;
     --cinza: #e5e5e5;
     --light: #ffffff;
@@ -15,19 +15,38 @@
 
 nav{
     position: fixed;
-    background-color: var(--dark);
+    background-color: var(--dBlue);
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    box-shadow: var(--dark) 0px 5px 15px;
+    box-shadow: var(--dBlue) 0px 5px 15px;
+    animation: fromTop 200ms ease-in-out;
+}
+
+@keyframes fromTop {
+   0%{
+    transform: translateY(-100px);
+   }
+   100%{
+
+   } 
 }
 
 nav a{
     color: var(--laranja);
     text-decoration: none;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+}
+
+nav a:hover{
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: underline;
+    color:var(--light);
 }
 
 #s1 {
