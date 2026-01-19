@@ -186,6 +186,30 @@ hr{
     padding-top: 50px;
 }
 
+footer{
+    background-color: var(--cinza);
+    height: 50px;
+    box-shadow: 0px 3px 10px black;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+    border-radius: 999px;
+    transition:all 500ms ease-in-out;
+}
+
+footer img:hover{
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0px 3px 10px black;
+}
+
 @media (width <=1000px) {
     #s1 {
         height: auto;
