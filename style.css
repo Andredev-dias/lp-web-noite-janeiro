@@ -98,7 +98,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.textDiv h2 {
+.textDiv h1 {
     font-size: 28px;
 }
 
@@ -120,7 +120,7 @@ nav a:hover {
     justify-content: center;
 }
 
-#s2 h1{
+h2, h1{
     font-size: 56px;
     text-shadow: 0px 3px 10px var(--laranja);
 }
@@ -132,6 +132,7 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .cards{
@@ -166,6 +167,18 @@ hr{
 #s3 {
     min-height: 100vh;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.videoStyle{
+    width: 800px;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px black;
 }
 
 #s4 {
@@ -193,5 +206,15 @@ hr{
 
     .imgDiv {
         margin-top: 50px;
+    }
+
+    #s3{
+        padding: 20px;
+    }
+    .videoStyle{
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        max-height: 400px;
     }
 }
