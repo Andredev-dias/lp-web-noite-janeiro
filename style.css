@@ -182,9 +182,54 @@ hr{
 }
 
 #s4 {
-    min-height: 100vh;
-    padding-top: 50px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: var(--mBlue);
+    color: var(--light);
+    padding: 100px;
 }
+
+.formulario{
+   width: 220px;
+   height: auto;
+   background-color: var(--dBlue);
+   border: 2px solid var(--light);
+   padding: 20px;
+   border-radius: 20px;
+}
+
+.formulario label{
+    font-size: 16px;
+}
+
+.formulario input, .formulario textarea{
+    padding: 10px;
+    width: 90%;
+}
+
+textarea{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.formulario button{
+    padding: 10px;
+    width: 100%;
+    opacity: 0.7;
+    transition: all 200ms ease-in-out;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
 
 footer{
     background-color: var(--cinza);
@@ -209,6 +254,8 @@ footer img:hover{
     transform: scale(1.1) translateY(-5px);
     box-shadow: 0px 3px 10px black;
 }
+
+
 
 @media (width <=1000px) {
     #s1 {
